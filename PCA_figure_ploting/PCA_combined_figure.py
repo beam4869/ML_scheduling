@@ -80,9 +80,7 @@ if os.path.exists(CACHE_FILE):
 else:
     print('No cache found — training RF for n=3…50 (this may take a minute)…')
     excel_path = (
-        '/Users/hongxuan/Library/CloudStorage/'
-        'GoogleDrive-hongxuan@umich.edu/My Drive/'
-        'AA gourp/machine learning/datasets for ML/'
+        '../datasets for ML/'
         'total dataset for ML with statistic numbers.xlsx'
     )
     data = pd.read_excel(excel_path)
