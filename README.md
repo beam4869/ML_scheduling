@@ -23,6 +23,37 @@ This repository contains the datasets and scripts used to:
 - Reproduce the main figures and numerical results reported in the manuscript.
 
 
+## Reproducing Figures
+
+The repository includes files for reproducing the main numerical figures, including:
+
+* PCA projection and PCA-component classification analysis:
+```bash
+python PCA_figure_ploting/PCA_Combined_figure.py
+```
+* Moving horizon scheduling profiles
+For the cost-optimal or emission-optimal scheduling results, select the corresponding objective rule (cost_rule or emiss_rule) in the script before running it. The moving horizon scheduling profiles can be reproduced using:
+```bash
+python "moving horizon scheduling_test/MHS_cost_emiss.py“
+python "moving horizon scheduling_test/MHS_test_LSTM_labels.py”
+python "moving horizon scheduling_test/MHS_test_true_RF_knee.py“
+python "moving horizon scheduling_test/MHS_test.py”
+```
+* Tradeoff-length analysis
+```bash
+python “Tradeoff_length_figures/tradeoff legnth detection test.py"
+```
+* Comparison of cost-emission objective relationships between ammonia production
+and chlor-alkali electrolysis
+```bash
+python chlor-alkali/plot_caseA.py
+```
+* Transfer-learning performance curves
+```bash
+python src/paper_figures_corrected.py
+```
+
+
 ## Case Studies
 
 ### Ammonia Production
@@ -155,19 +186,6 @@ The chlor-alkali dataset supports:
 * Binary cost-emission relationship classification
 * Cross-process comparison with ammonia production
 * Transfer learning from ammonia to chlor-alkali
-
-## Reproducing Figures
-
-The repository includes files for reproducing the main numerical figures, including:
-
-* PCA projection and PCA-component classification analysis
-* Machine-learning classification performance
-* Moving horizon scheduling profiles
-* Cost-emission Pareto frontier comparisons
-* Tradeoff-length analysis
-* Transfer-learning performance curves
-
-Figure-specific files are organized in the corresponding analysis folders.
 
 
 
