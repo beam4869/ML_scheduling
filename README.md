@@ -1,6 +1,5 @@
 # ML_scheduling
 Data for paper Machine Learning Driven Many-objective Moving Horizon Scheduling Optimization
-# ML Scheduling: Machine Learning Driven Many-Objective Moving Horizon Scheduling Optimization
 
 This repository contains the data, code, and plotting files associated with the paper:
 
